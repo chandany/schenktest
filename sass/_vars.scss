@@ -1,0 +1,64 @@
+@mixin line-icon($bg: $color-bg, $fg: $color-fg-bold) {
+	@include icon;
+	$size: 1px;
+
+	&:before {
+		color: $bg !important;
+		text-shadow:	$size 0 0 $fg,
+						($size * -1) 0 0 $fg,
+						0 $size 0 $fg,
+						0 ($size * -1) 0 $fg;
+	}
+}
+//Banner
+$color-bg-transparent-banner:-moz-linear-gradient(-45deg, rgba(153,255,0,0.24) 0%, rgba(252,252,0,0.3) 48%, rgba(255,255,255,0.36) 100%);
+$color-bg-transparent-banner:-webkit-linear-gradient(-45deg, rgba(153,255,0,0.24) 0%,rgba(252,252,0,0.3) 48%,rgba(255,255,255,0.36) 100%); 
+$color-bg-transparent-banner: linear-gradient(135deg, rgba(153,255,0,0.24) 0%,rgba(252,252,0,0.3) 48%,rgba(255,255,255,0.36) 100%);
+$color-bg-transparent-banner: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d99ff00', endColorstr='#5cffffff',GradientType=1 ); 
+
+// Misc.
+	$zindex-loader-overlay:			100000;
+	$max-spotlight:					20;
+
+// Duration.
+	$duration-transition:			0.2s;
+	$duration-landing-fadein:		1.5s;
+
+// Size.
+	$size-border-radius:			4px;
+	$size-element-height:			3em;
+	$size-element-margin:			2em;
+
+// Font.
+	$font-family:					'Roboto', Helvetica, sans-serif;
+	$font-family-fixed:				'Courier New', monospace;
+	$font-weight:					100;
+	$font-weight-bold:				400;
+ $font-weight-bolder:				700;
+
+// Color.
+	$p-color: #000000; //schwarz
+ $a-color: #333333; //dunkelgrau
+	$code-color: #EEECCD; //#1c1d26; //baige
+ $tr-color: #EEECCD; //#1c1d26; //baige
+ $nav-color-bg: #EEECCD; //#1c1d26; //baige
+	$color-bg:  #FFFFFF; //#1c1d26; //weiss
+	$color-bg-transparent:		rgba(237,235,205,0.95); //baige	rgba(23,24,32,0.95);
+ $color-bg-transparent-banner:		rgba(237,235,205,0.75); //baige	rgba(23,24,32,0.95);
+ $color-fg-bold: #000000; //schwarz
+	//$color-fg-bold:		; //dunk;
+	$color-fg:						rgba(0,0,0,0.95); //dunkelgrau rgba(255,255,255,0.75);
+ $color-fg-bold:						rgba(0,0,0,1.0); //dunkelgrau rgba(255,255,255,0.75);
+	$color-fg-light:				rgba(0,0,0,0.5); //dunkelgrau rgba(255,255,255,0.5);
+	$color-fg-lighter:			rgba(0,0,0,0.15); //dunkelgrau	rgba(255,255,255,0.15);
+	$color-border:					rgba(51,50,50,0.3); //dunkelgrau rgba(255,255,255,0.3);
+	$color-border-bg:				rgba(51,50,50,0.75); //dunkelgrau rgba(255,255,255,0.075);
+	$color-border2:					rgba(51,50,50,0.5); //dunkelgrau rgba(255,255,255,0.5);
+	$color-border2-bg:				rgba(51,50,50,0.25); //dunkelgrau rgba(255,255,255,0.25);
+
+	$color-accent1-bg:				#CBCB47;// hellgrün green #e44c65;
+	$color-accent2-bg:				#EEECCD;// baige #272833;
+ $color-accent2-bg-transparent-03:	rgba(237,235,205,0.3); //rgba(39,40,51,0.75); //dunkelgrau bgMenue
+	$color-accent2-bg-transparent:	rgba(237,235,205,0.75); //rgba(39,40,51,0.75); //dunkelgrau bgMenue
+	$color-accent3-bg:				#5A0558; //violett #5480f1;
+	$color-accent4-bg:				#8597AA; //taubenblau #39c088;
