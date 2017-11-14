@@ -573,7 +573,7 @@ $size-wrapper-pad-lr: 3em;
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url('images/overlay.png');
+			background-image: url('../images/overlay.png');
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -911,28 +911,28 @@ $size-wrapper-pad-lr: 3em;
 		bottom: 0;
 		display: block;
 		height: 5em;
+		width: 10em;
 		left: 50%;
 		margin: 0 0 0 -5em;
 		overflow: hidden;
 		position: absolute;
-		text-indent: 10em;
+		text-indent: 10em;//10em;
 		white-space: nowrap;
-		width: 10em;
 		z-index: 1;
 
 		&:before {
-			background-image: url('/images/arrow.svg');
+			background-image: url('../images/arrow.svg');
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-size: contain;
 			content: '';
 			display: block;
 			height: 1.5em;
+			width: 2em;
 			left: 50%;
 			margin: -0.75em 0 0 -1em;
 			position: absolute;
 			top: 50%;
-			width: 2em;
 			z-index: 1;
 		}
 	}
@@ -940,13 +940,14 @@ $size-wrapper-pad-lr: 3em;
 /* Spotlight */
 
 	.spotlight {
-		background-attachment:	fixed;
-		background-position:	center center;
-		background-size:		cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		height: 100vh;
 		overflow: hidden;
 		position: relative;
+	}
 
 		// Force spotlights to stack in reverse order (needed for our box
 		// shadows to overlap stuff in the right direction).
@@ -957,7 +958,7 @@ $size-wrapper-pad-lr: 3em;
 		}
 
 		&:before {
-			background-image: url('images/overlay.png');
+			background-image: url('../images/overlay.png');
 			content: '';
 			display: block;
 			height: 100%;
@@ -987,7 +988,7 @@ $size-wrapper-pad-lr: 3em;
 			@include vendor('transform', 'translate(0,0)');
 			@include vendor('transition', 'transform 0.75s ease, opacity 1s ease-in');
 			@include vendor-property('transition-delay', '0.5s');
-			opacity: 0.5;
+			opacity: 1.0;
 			color: $a-color;
 		}
 
@@ -1062,7 +1063,7 @@ $size-wrapper-pad-lr: 3em;
 
 			.goto-next {
 				@include vendor-property('transform', 'translate(0,1.5em)');
-				opacity: 0;
+				opacity: 1.0;
 			}
 
 			&.top {
@@ -1342,7 +1343,7 @@ $size-wrapper-pad-lr: 3em;
 	#banner {
 		background-attachment: fixed;
 		background-color: $color-accent2-bg;
-		background-image: url('../images/banner.jpg');
+		background-image: $bg-image;
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);

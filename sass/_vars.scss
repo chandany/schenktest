@@ -10,6 +10,15 @@
 						0 ($size * -1) 0 $fg;
 	}
 }
+//BG-Image
+
+$bg-image: url(../images/banner.jpg) ;
+
+/*img {
+	background-image: url(../images/Park_mit_Lindenallee_im_Frühling,_erstes_frisches_grünes_Laub.jpg)
+}*/
+
+
 //Banner
 $color-bg-transparent-banner:-moz-linear-gradient(-45deg, rgba(153,255,0,0.24) 0%, rgba(252,252,0,0.3) 48%, rgba(255,255,255,0.36) 100%);
 $color-bg-transparent-banner:-webkit-linear-gradient(-45deg, rgba(153,255,0,0.24) 0%,rgba(252,252,0,0.3) 48%,rgba(255,255,255,0.36) 100%); 
@@ -28,6 +37,8 @@ $color-bg-transparent-banner: progid:DXImageTransform.Microsoft.gradient( startC
 	$size-border-radius:			4px;
 	$size-element-height:			3em;
 	$size-element-margin:			2em;
+ $size-wrapper-pad-tb;   1em;
+ $size-wrapper-pad-lr:			1em;
 
 // Font.
 	$font-family:					'Roboto', Helvetica, sans-serif;
@@ -35,6 +46,9 @@ $color-bg-transparent-banner: progid:DXImageTransform.Microsoft.gradient( startC
 	$font-weight:					100;
 	$font-weight-bold:				400;
  $font-weight-bolder:				700;
+
+//Align
+ $align-l:left; //	text-align: left;
 
 // Color.
 	$p-color: #000000; //schwarz
@@ -44,7 +58,7 @@ $color-bg-transparent-banner: progid:DXImageTransform.Microsoft.gradient( startC
  $nav-color-bg: #EEECCD; //#1c1d26; //baige
 	$color-bg:  #FFFFFF; //#1c1d26; //weiss
 	$color-bg-transparent:		rgba(237,235,205,0.95); //baige	rgba(23,24,32,0.95);
- $color-bg-transparent-banner:		rgba(237,235,205,0.75); //baige	rgba(23,24,32,0.95);
+ $color-bg-transparent-banner:		rgba(237,235,205,0.5); //baige	rgba(23,24,32,0.95);
  $color-fg-bold: #000000; //schwarz
 	//$color-fg-bold:		; //dunk;
 	$color-fg:						rgba(0,0,0,0.95); //dunkelgrau rgba(255,255,255,0.75);
@@ -56,7 +70,7 @@ $color-bg-transparent-banner: progid:DXImageTransform.Microsoft.gradient( startC
 	$color-border2:					rgba(51,50,50,0.5); //dunkelgrau rgba(255,255,255,0.5);
 	$color-border2-bg:				rgba(51,50,50,0.25); //dunkelgrau rgba(255,255,255,0.25);
 
-	$color-accent1-bg:				#CBCB47;// hellgrün green #e44c65;
+	$color-accent1-bg:				#6D9A60;// hellgrün green #e44c65;
 	$color-accent2-bg:				#EEECCD;// baige #272833;
  $color-accent2-bg-transparent-03:	rgba(237,235,205,0.3); //rgba(39,40,51,0.75); //dunkelgrau bgMenue
 	$color-accent2-bg-transparent:	rgba(237,235,205,0.75); //rgba(39,40,51,0.75); //dunkelgrau bgMenue
